@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+:root {
+  --purple: #9146FF;
+  --dark-purple: #772ce8;
+  --background: #0e0e10;
+  --text: #fefefe;
+  --accent: #1f1f23;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 0;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--purple);
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--purple);
+  text-align: center;
+  padding: 60px 20px 40px;
+  border-bottom: 4px solid var(--dark-purple);
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #e0e0e0;
+}
+
+nav {
+  background-color: rgba(31, 31, 35, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 12px 24px;
+  background-color: var(--dark-purple);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #a970ff;
+  box-shadow: 0 0 10px rgba(145, 70, 255, 0.4);
+  color: var(--background); 
+}
+
+nav a:active {
+  background-color: var(--purple); 
+  color: white; 
+}
+
+main section {
+  background-color: var(--accent);
+  margin: 40px 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+main section:hover {
+  box-shadow: 0 0 25px hsla(264, 64%, 42%, 0.458);
+}
+
+main h2 {
+  color: var(--purple);
+  margin-top: 0;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+main ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+main ol li {
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+main ol li a {
+  color: var(--purple);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main ol li a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: var(--accent);
+  color: #ccc;
+  font-size: 0.9em;
+  margin-top: 40px;
+  border-top: 1px solid #444;
+}
+
+.social {
+  background-color: var(--accent);
+  padding: 50px 20px;
+  text-align: center;
+  border-top: 2px solid var(--purple);
+  margin-top: 40px;
+}
+
+.social h2 {
+  color: var(--purple);
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social-icons li a i {
+  font-size: 2.2em;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-icons li a:hover i {
+  transform: scale(1.2);
+  color: #ccc;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  main ol {
+    padding-left: 15px;
+  }
+
+  main ol li {
+    font-size: 1.1em;
+  }
+
+  .social h2 {
+    font-size: 1.5em;
+  }
+
+  .social-icons li a i {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 800px) {
+  .social-icons li a i {
+    font-size: 2.8em;
+  }
+}
+
+  
